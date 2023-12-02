@@ -1,0 +1,4 @@
+package Maker
+
+func Create() {
+}
