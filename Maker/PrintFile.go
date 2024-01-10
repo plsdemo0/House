@@ -20,10 +20,10 @@ func PrintConsole(x []interface{}) {
 				"Цвет шерсти питомца:\t%s\n", v.PetType, v.Name, v.Age, v.PetBreed, v.HairColor))
 		case Family.Members:
 			fmt.Println(fmt.Sprintf("\t%s\n"+
-				"Имя брата:\t%s\n"+
-				"Возраст брата:\t%d\n"+
-				"Рост брата:\t%.2f\n"+
-				"Цвет волос:\t%s\n", v.Role, v.Name, v.Age, v.Height, v.HairColor))
+				"Имя:\t%s\n"+
+				"Возраст:\t%d\n"+
+				"Рост:\t%.2f\n"+
+				"Цвет:\t%s\n", v.Role, v.Name, v.Age, v.Height, v.HairColor))
 			//мебель
 		case Things.Bed:
 			fmt.Println(fmt.Sprintf("\tКровать\n"+
