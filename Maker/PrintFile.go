@@ -23,7 +23,7 @@ func PrintConsole(x []interface{}) {
 				"Имя:\t%s\n"+
 				"Возраст:\t%d\n"+
 				"Рост:\t%.2f\n"+
-				"Цвет:\t%s\n", v.Role, v.Name, v.Age, v.Height, v.HairColor))
+				"Цвет волос:\t%s\n", v.Role, v.Name, v.Age, v.Height, v.HairColor))
 			//мебель
 		case Things.Bed:
 			fmt.Println(fmt.Sprintf("\tКровать\n"+
