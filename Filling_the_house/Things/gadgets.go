@@ -9,4 +9,5 @@ type TV struct {
 	Brand      string
 	ScreenType string
 	ScreenSize int
+	Room       string
 }

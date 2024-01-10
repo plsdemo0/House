@@ -132,6 +132,7 @@ func Create() {
 		Brand:      "Sony",
 		ScreenType: "IPS",
 		ScreenSize: 47,
+		Room:       "Кухня",
 	}
 	list_of_things = append(list_of_things, kitchen_tv)
 
@@ -139,6 +140,7 @@ func Create() {
 		Brand:      "Sony",
 		ScreenType: "IPS",
 		ScreenSize: 57,
+		Room:       "Зал",
 	}
 	list_of_things = append(list_of_things, hall_tv)
 

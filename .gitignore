@@ -10,3 +10,5 @@ go.work
 # игнорирование системных файлов и файлов IDE
 /.idea
 /.DS_Store
+# игнорирование файлов database
+/.database
