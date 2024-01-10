@@ -8,21 +8,8 @@ type Pet struct {
 	HairColor string
 }
 
-type Brother struct {
-	Name      string
-	Age       int
-	Height    float32
-	HairColor string
-}
-
-type Mother struct {
-	Name      string
-	Age       int
-	Height    float32
-	HairColor string
-}
-
-type Father struct {
+type Members struct {
+	Role      string
 	Name      string
 	Age       int
 	Height    float32

@@ -6,7 +6,7 @@ import (
 	"fmt"
 )
 
-func PrintConsole_FamilyPet(x []interface{}) {
+func PrintConsole(x []interface{}) {
 	for i := 0; i < len(x); i++ {
 		switch v := x[i].(type) {
 
@@ -18,25 +18,12 @@ func PrintConsole_FamilyPet(x []interface{}) {
 				"Возраст питомца:\t%d\n"+
 				"Порода питомца:\t%s\n"+
 				"Цвет шерсти питомца:\t%s\n", v.PetType, v.Name, v.Age, v.PetBreed, v.HairColor))
-		case Family.Brother:
-			fmt.Println(fmt.Sprintf("\tБрат\n"+
+		case Family.Members:
+			fmt.Println(fmt.Sprintf("\t%s\n"+
 				"Имя брата:\t%s\n"+
 				"Возраст брата:\t%d\n"+
 				"Рост брата:\t%.2f\n"+
-				"Цвет волос:\t%s\n", v.Name, v.Age, v.Height, v.HairColor))
-		case Family.Mother:
-			fmt.Println(fmt.Sprintf("\tМама\n"+
-				"Имя мамы:\t%s\n"+
-				"Возраст мамы:\t%d\n"+
-				"Рост мамы:\t%.2f\n"+
-				"Цвет волос:\t%s\n", v.Name, v.Age, v.Height, v.HairColor))
-		case Family.Father:
-			fmt.Println(fmt.Sprintf("\tОтец\n"+
-				"Имя отец:\t%s\n"+
-				"Возраст отца:\t%d\n"+
-				"Рост отца:\t%.2f\n"+
-				"Цвет волос:\t%s\n", v.Name, v.Age, v.Height, v.HairColor))
-
+				"Цвет волос:\t%s\n", v.Role, v.Name, v.Age, v.Height, v.HairColor))
 			//мебель
 		case Things.Bed:
 			fmt.Println(fmt.Sprintf("\tКровать\n"+

@@ -18,7 +18,8 @@ func Create() {
 	}
 	list_of_things = append(list_of_things, cat)
 
-	brother := Family.Brother{
+	brother := Family.Members{
+		Role:      "Брат",
 		Name:      "Егор",
 		Age:       12,
 		Height:    140.123,
@@ -26,7 +27,8 @@ func Create() {
 	}
 	list_of_things = append(list_of_things, brother)
 
-	mother := Family.Mother{
+	mother := Family.Members{
+		Role:      "Мама",
 		Name:      "Вера",
 		Age:       47,
 		Height:    170.21,
@@ -34,7 +36,8 @@ func Create() {
 	}
 	list_of_things = append(list_of_things, mother)
 
-	father := Family.Father{
+	father := Family.Members{
+		Role:      "Папа",
 		Name:      "Михаил",
 		Age:       47,
 		Height:    175.91,
@@ -144,5 +147,5 @@ func Create() {
 	}
 	list_of_things = append(list_of_things, hall_tv)
 
-	PrintConsole_FamilyPet(list_of_things)
+	PrintConsole(list_of_things)
 }
